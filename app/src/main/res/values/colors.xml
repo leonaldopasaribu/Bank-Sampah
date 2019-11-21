@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#62C2BC</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue">#138496</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="menunggu">#E0A800</color>
+    <color name="dijemput">#138496</color>
+    <color name="berhasil">#218838</color>
+</resources>

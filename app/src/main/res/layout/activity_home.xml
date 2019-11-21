@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.banksampah.activity.HomeActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.banksampah.activity.HomeActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/city"
+            android:weightSum="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+
+                <TextView
+                    android:id="@+id/textGrid"
+                    android:text="Selamat Datang"
+                    android:textSize="30dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textGrid2"
+                    android:text="JONATAN SIHOMBING"
+                    android:textSize="22dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textGrid"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:src="@drawable/setor" />-->
+
+            </RelativeLayout>
+
+
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/mainGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-900px"
+                android:layout_weight="1"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                android:padding="14dp"
+                app:rowCount="3">
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_rowWeight="1"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/setor" />
+                        <TextView
+                            android:text="Setor Sampah"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_rowWeight="1"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/withdraw" />
+                        <TextView
+                            android:text="Penarikan Uang"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- Row 2 -->
+
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_rowWeight="1"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/document" />
+                        <TextView
+                            android:text="Riwayat Setor"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_rowWeight="1"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/littering" />
+                        <TextView
+                            android:text="Jenis Sampah"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
