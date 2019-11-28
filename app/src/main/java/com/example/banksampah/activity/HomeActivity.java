@@ -26,7 +26,6 @@ public class HomeActivity extends AppCompatActivity {
         //Set Event
         setSingleEvent(mainGrid);
         //setToggleEvent(mainGrid);
-
     }
 
     private void setSingleEvent(GridLayout mainGrid) {
