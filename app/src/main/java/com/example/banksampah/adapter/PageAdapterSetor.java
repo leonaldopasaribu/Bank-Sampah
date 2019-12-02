@@ -4,15 +4,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.banksampah.fragment.BerhasilFragment;
-import com.example.banksampah.fragment.DijemputFragment;
-import com.example.banksampah.fragment.MenungguFragment;
+import com.example.banksampah.fragment.BerhasilFragmentSetor;
+import com.example.banksampah.fragment.DijemputFragmentSetor;
+import com.example.banksampah.fragment.MenungguFragmentSetor;
 import com.example.banksampah.fragment.SetorFragment;
 
-public class PageAdapter extends FragmentPagerAdapter {
+public class PageAdapterSetor extends FragmentPagerAdapter {
     private int numOfTabs;
 
-    public PageAdapter(FragmentManager fm, int numOfTabs) {
+    public PageAdapterSetor(FragmentManager fm, int numOfTabs) {
         super(fm);
         this.numOfTabs = numOfTabs;
     }
@@ -23,11 +23,11 @@ public class PageAdapter extends FragmentPagerAdapter {
             case 0:
                 return new SetorFragment();
             case 1:
-                return new MenungguFragment();
+                return new MenungguFragmentSetor();
             case 2:
-                return new DijemputFragment();
+                return new DijemputFragmentSetor();
             case 3:
-                return new BerhasilFragment();
+                return new BerhasilFragmentSetor();
             default:
                 return null;
         }

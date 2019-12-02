@@ -15,8 +15,8 @@ import com.example.banksampah.R;
 import butterknife.ButterKnife;
 
 
-public class MenungguFragment extends Fragment {
-    public MenungguFragment(){
+public class BerhasilFragmentSetor extends Fragment {
+    public BerhasilFragmentSetor(){
 
     }
 
@@ -28,7 +28,7 @@ public class MenungguFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_menunggu, container, false);
+        View view = inflater.inflate(R.layout.fragment_berhasil, container, false);
 
         ButterKnife.bind(this, view);
 

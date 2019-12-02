@@ -10,15 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.example.banksampah.R;
-import com.example.banksampah.adapter.PageAdapter;
-
-import java.util.Set;
+import com.example.banksampah.adapter.PageAdapterSetor;
 
 public class SetorActivity extends AppCompatActivity {
     Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager viewPager;
-    PageAdapter pageAdapter;
+    PageAdapterSetor pageAdapter;
     TabItem tabSetor;
     TabItem tabMenunggu;
     TabItem tabDijemput;
@@ -42,7 +40,7 @@ public class SetorActivity extends AppCompatActivity {
         tabBerhasil = findViewById(R.id.tabBerhasil);
         viewPager = findViewById(R.id.viewPager);
 
-        pageAdapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        pageAdapter = new PageAdapterSetor(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageAdapter);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

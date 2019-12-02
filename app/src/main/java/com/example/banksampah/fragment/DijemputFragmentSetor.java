@@ -15,8 +15,8 @@ import com.example.banksampah.R;
 import butterknife.ButterKnife;
 
 
-public class BerhasilFragment extends Fragment {
-    public BerhasilFragment(){
+public class DijemputFragmentSetor extends Fragment {
+    public DijemputFragmentSetor(){
 
     }
 
@@ -28,7 +28,7 @@ public class BerhasilFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_berhasil, container, false);
+        View view = inflater.inflate(R.layout.fragment_dijemput, container, false);
 
         ButterKnife.bind(this, view);
 
