@@ -8,24 +8,60 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.v7.widget.GridLayout;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.banksampah.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
-
+    Button LogOutButton;
+    FirebaseAuth mAuth;
+    FirebaseAuth.AuthStateListener mAuthListner;
+    FirebaseUser mUser;
     GridLayout mainGrid;
+    public static final String TAG="LOGIN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        LogOutButton =(Button)findViewById(R.id.btnLogout);
+
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+        Intent intent = getIntent();
 
         //Set Event
         setSingleEvent(mainGrid);
         //setToggleEvent(mainGrid);
+
+        LogOutButton.setOnClickListener(new View.OnClickListener() {
+            // @Override
+            public void onClick(View v) {
+
+
+                //Finishing current DashBoard activity on button click.
+                finish();
+
+                Toast.makeText(HomeActivity.this,"Log Out Successfull", Toast.LENGTH_LONG).show();
+                //Intent intent=new Intent(DashboardActivity.this,LoginActivity.class);
+                //startActivity(intent);
+               /*if (v.getId() == R.id.button1) {
+                    AuthUI.getInstance()
+                            .signOut(this)
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    // user is now signed out
+                                    startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+                                    finish();
+                                }
+                            });
+                }*/
+
+            }
+        });
     }
 
     private void setSingleEvent(GridLayout mainGrid) {
