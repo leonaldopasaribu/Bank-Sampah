@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         // for authentication using FirebaseAuth.
         mAuth = FirebaseAuth.getInstance();
         mRegisterbtn.setOnClickListener(this);
-//        mLoginPageBack.setOnClickListener(this);
+        //mLoginPageBack.setOnClickListener(this);
         mDialog = new ProgressDialog(this);
         mdatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
