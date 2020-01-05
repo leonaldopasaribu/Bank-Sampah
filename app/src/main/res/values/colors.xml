@@ -9,4 +9,5 @@
     <color name="menunggu">#E0A800</color>
     <color name="dijemput">#138496</color>
     <color name="berhasil">#218838</color>
+    <color name="gray">#d3d3d3</color>
 </resources>

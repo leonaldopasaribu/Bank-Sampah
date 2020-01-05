@@ -1,8 +1,8 @@
-package com.example.banksampah.activity;
+package com.example.banksampah.activity.user;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.banksampah.R;

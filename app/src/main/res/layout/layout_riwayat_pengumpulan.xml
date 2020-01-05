@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginStart="@dimen/catalogue_cardview_margin"
+    android:layout_marginTop="@dimen/catalogue_cardview_margin"
+    android:layout_marginEnd="@dimen/catalogue_cardview_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_sampah"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/city" />
+
+        <TextView
+            android:id="@+id/jenis_sampah"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_textview_margin_half"
+            android:layout_marginTop="@dimen/detail_textview_margin_half"
+            android:layout_marginEnd="@dimen/detail_textview_margin_half"
+            android:layout_marginRight="@dimen/detail_textview_margin_half"
+            android:alpha="0.7"
+            android:text="Plastik"
+            app:layout_constraintStart_toEndOf="@+id/image_sampah"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tanggal_pengumpulan"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_textview_margin_half"
+            android:layout_marginTop="@dimen/detail_textview_margin_half"
+            android:layout_marginEnd="@dimen/detail_textview_margin_half"
+            android:layout_marginRight="@dimen/detail_textview_margin_half"
+            android:text="Rabu, 13 Agustus 2019"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_sampah"
+            app:layout_constraintTop_toBottomOf="@+id/jenis_sampah" />
+
+        <TextView
+            android:id="@+id/berat_total"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_textview_margin_half"
+            android:layout_marginTop="@dimen/detail_textview_margin_half"
+            android:layout_marginEnd="@dimen/detail_textview_margin_half"
+            android:layout_marginRight="@dimen/detail_textview_margin_half"
+            android:text="2 KG"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_sampah"
+            app:layout_constraintTop_toBottomOf="@+id/tanggal_pengumpulan" />
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="@dimen/textview_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_textview_margin_half"
+            android:layout_marginTop="@dimen/detail_textview_margin_half"
+            android:layout_marginEnd="@dimen/detail_textview_margin_half"
+            android:layout_marginRight="@dimen/detail_textview_margin_half"
+            android:text="Rp. 7000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_sampah"
+            app:layout_constraintTop_toBottomOf="@+id/berat_total" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

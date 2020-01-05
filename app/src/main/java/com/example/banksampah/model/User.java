@@ -1,4 +1,4 @@
-package com.example.banksampah.activity;
+package com.example.banksampah.model;
 
 public class User {
     String Displayname;

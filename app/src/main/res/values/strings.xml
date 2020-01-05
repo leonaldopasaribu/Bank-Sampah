@@ -18,6 +18,14 @@
     <string name="dijemput">Dijemput</string>
     <string name="berhasil">Berhasil</string>
 
+    <string-array name="jenis_sampah">
+        <item>Plastik</item>
+        <item>Kertas</item>
+        <item>Barang Elektronik</item>
+        <item>Besi</item>
+        <item>Pakaian</item>
+    </string-array>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

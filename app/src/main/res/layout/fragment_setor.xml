@@ -12,12 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
-            android:background="@color/colorPrimary"
+        <androidx.cardview.widget.CardView
             android:layout_width="350dp"
-            android:layout_height="250dp"
-            android:layout_marginTop="100dp"
+            android:layout_height="320dp"
             android:layout_marginLeft="35dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorPrimary"
             app:cardCornerRadius="30dp"
             app:cardElevation="8dp">
 
@@ -31,15 +31,46 @@
                 android:textSize="20dp" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/jenisSampah"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="70dp"
                 android:layout_marginLeft="25dp"
-                android:background="@drawable/spinner_border" />
+                android:layout_marginTop="70dp"
+                android:background="@drawable/spinner_border"
+                android:entries="@array/jenis_sampah" />
+
+            <EditText
+                android:id="@+id/beratSampah"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="24dp"
+                android:autofillHints="@string/prompt_password"
+                android:background="@drawable/spinner_login"
+                android:hint="Berat Sampah"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jenisSampah" />
+
+            <Button
+                android:id="@+id/btnSetor"
+                android:background="@drawable/btn_rounded"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="220dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginEnd="48dp"
+                android:text="SETOR"
+                android:textColor="#fff"
+                android:onClick="Home"/>
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

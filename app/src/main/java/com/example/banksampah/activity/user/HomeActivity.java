@@ -1,17 +1,18 @@
-package com.example.banksampah.activity;
+package com.example.banksampah.activity.user;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.view.View;
-import android.support.v7.widget.GridLayout;
+import androidx.gridlayout.widget.GridLayout;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.banksampah.R;
+import com.example.banksampah.activity.admin.SampahActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -88,13 +89,36 @@ public class HomeActivity extends AppCompatActivity {
                 cardView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(HomeActivity.this, SetorActivity.class);
+                        Intent intent = new Intent(HomeActivity.this, PenarikanActivity.class);
                         intent.putExtra("info","This is activity from card item index  "+finalI);
                         startActivity(intent);
                     }
                 });
             }
+            else if(i==2)
+            {
 
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(HomeActivity.this, RiwayatActivity.class);
+                        intent.putExtra("info","This is activity from card item index  "+finalI);
+                        startActivity(intent);
+                    }
+                });
+            }
+            else if(i==3)
+            {
+
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(HomeActivity.this, UserSampahActivity.class);
+                        intent.putExtra("info","This is activity from card item index  "+finalI);
+                        startActivity(intent);
+                    }
+                });
+            }
         }
     }
 

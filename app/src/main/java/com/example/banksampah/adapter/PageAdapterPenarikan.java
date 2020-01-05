@@ -1,13 +1,12 @@
 package com.example.banksampah.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.banksampah.fragment.BerhasilFragmentPenarikan;
 import com.example.banksampah.fragment.MenungguFragmentPenarikan;
 import com.example.banksampah.fragment.PenarikanFragment;
-
 
 public class PageAdapterPenarikan extends FragmentPagerAdapter {
     private int numOfTabs;

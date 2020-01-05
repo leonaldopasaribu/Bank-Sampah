@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:text="Calls"
+        android:text="Berhasil"
         android:textSize="30sp" />
 
 </FrameLayout>

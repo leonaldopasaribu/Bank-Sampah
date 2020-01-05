@@ -5,4 +5,17 @@
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="detail_textview_margin">16dp</dimen>
+    <dimen name="detail_textview_size">24sp</dimen>
+    <dimen name="detail_textview_margin_half">8dp</dimen>
+    <dimen name="detail_textview_margin_double">32dp</dimen>
+    <dimen name="search_margin_half">8dp</dimen>
+    <dimen name="search_margin">16dp</dimen>
+    <dimen name="search_elevation">4dp</dimen>
+    <dimen name="catalogue_cardview_height">128dp</dimen>
+    <dimen name="catalogue_cardview_margin">8dp</dimen>
+    <dimen name="catalogue_imageview_width">96dp</dimen>
+    <dimen name="catalogue_imageview_height">0dp</dimen>
+    <dimen name="textview_width">0dp</dimen>
 </resources>
